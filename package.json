@@ -1,0 +1,26 @@
+{
+  "name": "wordle_js",
+  "description": "Wordle Game in Terminal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Md. Riyasat Hossain",
+  "type": "module",
+  "bin": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "nexe index.js -r \"node_modules/\" -r \"assets/\" -r \"package.json\" --ico \"assets/logo.ico\" -t \"linux-x64\" --build"
+  },
+  "pkg": {
+    "assets": [
+      "assets/*"
+    ],
+    "output": "dist"
+  },
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "chalk": "^5.0.0",
+    "prompt-sync": "^4.2.0"
+  }
+}
